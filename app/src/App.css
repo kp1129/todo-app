@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lato&display=swap");
+
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+.App {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  background-color: #f9cbb1;
+  color: #20193b;
+  height: 100vh;  
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  padding: 2rem 0;
+}
+
+li {
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+@media (min-width:480px)  { 
+  /* smartphones, Android phones, landscape iPhone */ 
+}
+@media (min-width:600px)  {
+   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+   }
+@media (min-width:801px)  {
+   /* tablet, landscape iPad, lo-res laptops ands desktops */
+   }
+@media (min-width:1025px) { 
+  /* big landscape tablets, laptops, and desktops */ 
+}
+@media (min-width:1281px) { 
+  /* hi-res laptops and desktops */
+ }
+
+
+
