@@ -14,14 +14,34 @@
 
 h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding: 2rem 0;
 }
 
-li {
+div.error {
   font-family: 'Lato', sans-serif;
-  padding: 0.5rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #d66464;
 }
+
+.list-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.completed {
+  color: #d875757a;
+  text-decoration: line-through;
+}
+
+.form-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
 
 
 

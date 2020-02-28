@@ -1,12 +1,14 @@
 import React from 'react';
 import Todo from './Todo';
 
-const ListOfTodos = ({todos}) => {
+const ListOfTodos = ({todos, toggleCompleted}) => {
     return(
-        <ul>
-            {todos.map(todo => <Todo data={todo}/>)}
+        <div className="list-container">
+      
+            {todos.map(todo => <Todo data={todo} toggleCompleted={toggleCompleted}/>)}
             
-        </ul>
+  
+        </div>
     )
 }
 
