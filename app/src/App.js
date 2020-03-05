@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import MetaTags from 'react-meta-tags';
 import ListOfTodos from './components/ListOfTodos';
 import AddTodos from './components/AddTodos';
 import {useLocalStorage} from './hooks/useLocalStorage';
@@ -38,6 +39,10 @@ const App = () => {
 
   return (
     <div className="App">
+      <MetaTags>
+        <title>Todo List App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      </MetaTags>
       <h1>todo list</h1>
 
       {/* add tasks todo form */}

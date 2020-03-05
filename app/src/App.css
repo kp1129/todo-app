@@ -2,60 +2,21 @@
 
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
 .App {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  text-align: center;
   background-color: #f9cbb1;
-  color: #20193b;
-  height: 100vh;  
+  height: 100vh;
+  width: 100%;
 }
 
 h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 2.5rem;
+  color: #20193b;
   padding: 2.5rem 0 2rem 0;
-
+  text-align: center;
 }
 
-div.error {
-  font-family: 'Lato', sans-serif;
-  padding: 0.25rem 0;
-  font-size: 1rem;
-  color: #d66464;
-}
-
-.list-container {
-  width: 90%;
-  margin: 0 auto;  
-}
-
-ul {
-  list-style-type: square;  
-}
-
-.todo {
-  font-family: 'Lato', sans-serif;
-  color: #d66464;
-  padding-left: 1rem;
-  text-align: left;
-  width: fit-content;
-  max-width: 90%;
-  margin: 1.5rem auto;
-  font-size: 1.15rem;
-}
-
-.todo:hover {
-  cursor: pointer;
-}
-
-.completed {
-  color: #d875757a;
-  text-decoration: line-through;
-}
-
-.form-container {
-  width: 90%;
+.form-container {  
+  width: 85%;
   margin: 0 auto;
   font-family: 'Lato', sans-serif;
 }
@@ -63,7 +24,7 @@ ul {
 form {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -92,9 +53,46 @@ input {
   color: #20193b;
   margin: 0.3rem 0 0 0;
   padding: 0.3rem 1rem;
-  width: 90%;
+  width: 100%;
   cursor: pointer;
 }
+
+div.error {
+  font-family: 'Lato', sans-serif;
+  padding: 0.25rem 0;
+  font-size: 1rem;
+  color: #d66464;
+}
+
+.completed {
+  color: #d875757a;
+  text-decoration: line-through;
+}
+
+.list-container {
+  width: 85%;
+  margin: 0 auto;  
+}
+
+ul {
+  list-style-type: square;  
+}
+
+.todo {
+  font-family: 'Lato', sans-serif;
+  color: #d66464;
+  padding-left: 1rem;
+  text-align: left;
+  width: fit-content;
+  max-width: 90%;
+  margin: 1.5rem auto;
+  font-size: 1.15rem;
+}
+
+.todo:hover {
+  cursor: pointer;
+}
+
 
 .pagination-container {
   display: flex;
@@ -110,6 +108,7 @@ input {
   background-color: palevioletred;
   padding: 0.3rem;
   margin: 0.1rem 0.5rem;
+  color: #20193b;
   cursor: pointer;
 }
 
