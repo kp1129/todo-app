@@ -8,7 +8,7 @@ const App = () => {
 
   const [todos, setTodos] = useLocalStorage('todo list', [
     {
-      task: "add tasks to do",
+      task: "add tasks to do, then click on them to cross them off",
       completed: false,
       id: Date.now()
     }
