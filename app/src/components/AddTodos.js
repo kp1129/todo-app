@@ -34,17 +34,16 @@ const AddTodos = ({addTodo, clearCompleted}) => {
           setError(false);
       }
     return (
-        <div className="form-container">
+        <div className="form-container">            
             <form onSubmit={handleAddTodo} >
+            {error && <div className="error"><p>Add a task to do</p></div>}
                 <label htmlFor="todo">
-                    <input type="text" name="todo" id="todo" placeholder="add task" value={newTodo} onChange={handleInputChange} /> 
+                    <input type="text" name="todo" id="todo" placeholder="add new task here" value={newTodo} onChange={handleInputChange} /> 
                 </label>
-                <button type="submit">add new</button>
-            {error && <div className="error"><p>Can't add empty tasks!</p><p>Please add a task to do</p></div>}
+                <button className='add-new' type="submit">add</button>
             </form>
-            <button type="text" onClick={handleClear}>clear completed</button>
-        </div>
-        
+            <button className='clear-completed' type="text" onClick={handleClear}>clear completed</button>
+        </div>        
     )
 }
 

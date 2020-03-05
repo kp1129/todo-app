@@ -22,10 +22,10 @@ const ListOfTodos = ({todos, toggleCompleted}) => {
     }
 
     return(
-        <div className="list-container">          
-      
-            {todos.map(todo => <Todo data={todo} toggleCompleted={toggleCompleted}/>).reverse().slice(start, end)}           
-       
+        <div className="list-container">      
+            <ul>        
+                {todos.map(todo => <Todo data={todo} toggleCompleted={toggleCompleted}/>).reverse().slice(start, end)}           
+            </ul>  
             <Pagination display={display} total={todos.length}/>
         </div>
     )

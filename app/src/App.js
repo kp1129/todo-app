@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import ListOfTodos from './components/ListOfTodos';
 import AddTodos from './components/AddTodos';
-import mockData from './mockData';
+import {useLocalStorage} from './hooks/useLocalStorage';
 import './App.css';
 
 const App = () => {
 
-  const [todos, setTodos] = useState([
+  const [todos, setTodos] = useLocalStorage('todo list', [
     {
       task: "add tasks to do",
       completed: false,

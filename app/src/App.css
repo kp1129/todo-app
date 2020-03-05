@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lato&display=swap");
 
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
-
 .App {
   margin: 0;
   padding: 0;
@@ -15,20 +14,39 @@
 h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 2.5rem;
-  padding: 2rem 0;
+  padding: 2.5rem 0 2rem 0;
+
 }
 
 div.error {
   font-family: 'Lato', sans-serif;
-  padding: 1rem 3rem;
+  padding: 0.25rem 0;
   font-size: 1rem;
-  line-height: 1.25rem;
   color: #d66464;
 }
 
 .list-container {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto;  
+}
+
+ul {
+  list-style-type: square;  
+}
+
+.todo {
+  font-family: 'Lato', sans-serif;
+  color: #d66464;
+  padding-left: 1rem;
+  text-align: left;
+  width: fit-content;
+  max-width: 90%;
+  margin: 1.5rem auto;
+  font-size: 1.15rem;
+}
+
+.todo:hover {
+  cursor: pointer;
 }
 
 .completed {
@@ -39,24 +57,61 @@ div.error {
 .form-container {
   width: 90%;
   margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+input {
+    border-radius: 0.2rem;
+    border: 2px solid palevioletred;
+    width: 100%;
+    padding: 0.25em 1em; 
+}
+
+.add-new {
+    border-radius: 0.2rem;
+    border: 2px solid palevioletred;
+    background-color: palevioletred;
+    color: #20193b;
+    margin: 0.4rem 0 0.3rem 0;
+    padding: 0.3rem 1rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.clear-completed {
+  border-radius: 0.2rem;
+  border: 2px solid palevioletred;
+  background-color: palevioletred;
+  color: #20193b;
+  margin: 0.3rem 0 0 0;
+  padding: 0.3rem 1rem;
+  width: 90%;
+  cursor: pointer;
 }
 
 .pagination-container {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  
+  width: 90%;
+  margin: 0 auto;
 }
 
 .pagination-button {
-  border: 1px solid gray;
-  padding: 0.4rem;
-  margin: 0.4rem;
+  border-radius: 0.2rem;
+  border: 2px solid palevioletred;
+  background-color: palevioletred;
+  padding: 0.3rem;
+  margin: 0.1rem 0.5rem;
   cursor: pointer;
 }
-
-
-
-
 
 @media (min-width:480px)  { 
   /* smartphones, Android phones, landscape iPhone */ 

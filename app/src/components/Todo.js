@@ -1,10 +1,10 @@
 import React from "react";
-import "./Todo.css";
+import "../App.css";
 
 const Todo = ({data, toggleCompleted}) => {
     
 return <div className={data.completed ? "completed todo" : "todo"} onClick={() => toggleCompleted(data.id)}>
-            <p>{data.task}</p>
+            <li>{data.task}</li>
         </div>;
 };
 
