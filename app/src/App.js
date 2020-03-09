@@ -43,6 +43,7 @@ const App = () => {
         <title>Todo List App</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </MetaTags>
+      <div className="app-panel" role="main">
       <h1>todo list</h1>
 
       {/* add tasks todo form */}
@@ -50,6 +51,7 @@ const App = () => {
 
       {/* list of todos todo + dynamic pagination */}
       <ListOfTodos todos={todos} toggleCompleted={toggleCompleted}/>
+      </div>
 
     </div>
   );

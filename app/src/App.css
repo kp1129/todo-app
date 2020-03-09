@@ -1,24 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lato&display=swap");
 
-/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 .App {
-  background-color: #20193b;
   height: 100vh;
   width: 100%;
+  padding-top: 10rem;
+}
+
+.app-panel {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  margin: 0 auto;
 }
 
 h1 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 2.5rem;
   color: palevioletred;
   padding: 2.5rem 0 2rem 0;
   text-align: center;
 }
 
-.form-container {  
+.form-container {
   width: 85%;
-  margin: 0 auto;
-  font-family: 'Lato', sans-serif;
+  margin: 0.25rem auto;
+  font-family: "Lato", sans-serif;
 }
 
 form {
@@ -29,21 +36,21 @@ form {
 }
 
 input {
-    border-radius: 0.2rem;
-    border: 2px solid palevioletred;
-    width: 100%;
-    padding: 0.25em 1em; 
+  border-radius: 0.2rem;
+  border: 2px solid palevioletred;
+  width: 100%;
+  padding: 0.25em 1em;
 }
 
 .add-new {
-    border-radius: 0.2rem;
-    border: 2px solid palevioletred;
-    background-color: palevioletred;
-    color: #20193b;
-    margin: 0.4rem 0 0.3rem 0;
-    padding: 0.3rem 1rem;
-    width: 100%;
-    cursor: pointer;
+  border-radius: 0.2rem;
+  border: 2px solid palevioletred;
+  background-color: palevioletred;
+  color: #20193b;
+  margin: 0.4rem 0 0.3rem 0;
+  padding: 0.3rem 1rem;
+  width: 100%;
+  cursor: pointer;
 }
 
 .clear-completed {
@@ -58,7 +65,7 @@ input {
 }
 
 div.error {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 0.25rem 0;
   font-size: 1rem;
   text-align: center;
@@ -67,15 +74,15 @@ div.error {
 
 .list-container {
   width: 80%;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
 ul {
-  list-style-type: square;  
+  list-style-type: square;
 }
 
 .todo {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #d66464;
   padding-left: 1rem;
   text-align: left;
@@ -111,47 +118,49 @@ ul {
   cursor: pointer;
 }
 
-@media (min-width:480px)  { 
-  /* smartphones, Android phones, landscape iPhone */ 
-  .form-container {  
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+  .form-container {
     width: 60%;
   }
 
   .list-container {
     width: 60%;
   }
-
-
 }
-@media (min-width:600px)  {
-   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-   .App {
-     background-color: #20193b;
-   }
-
-   h1 {
-     color: palevioletred;
-   }
-
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .App {
+    background-color: #20193b;
   }
-@media (min-width:801px)  {
-   /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+  h1 {
+    color: palevioletred;
+  }
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .App {
+    background-image: url("./image/sunrise1200.jpg");
+    background-size: cover;
+    background-color: #20193b;
+    background-repeat: no-repeat;
+  }
+
+  .app-panel {
+    background-color: #20193be8;
+    border-radius: 2%;
+    box-shadow: 3px 3px 5px 5px #20193b;
+  }
+
   h1 {
     padding-top: 10%;
   }
-
-   .form-container {  
-    width: 50%;
-  }
-
-  .list-container {
-    width: 50%;
-  }
-   }
-@media (min-width:1025px) { 
-  /* big landscape tablets, laptops, and desktops */ 
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
   .App {
-    background-image: url("./image/sunrise.jpg");
+    background-image: url("./image/sunrise4000.jpg");
     background-size: cover;
     background-color: #20193b;
     background-repeat: no-repeat;
@@ -163,24 +172,10 @@ ul {
     color: #f9cbb1;
   }
 
-  .form-container {  
-    width: 40%;
-  }
-
-  .list-container {
-    width: 40%;
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  .pagination-container {
+    margin-bottom: 1rem;
   }
 }
-@media (min-width:1281px) { 
-  /* hi-res laptops and desktops */  
-  .form-container {  
-    width: 30%;
-  }
-
-  .list-container {
-    width: 30%;
- }
-}
-
-
-

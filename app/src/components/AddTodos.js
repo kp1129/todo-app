@@ -37,10 +37,10 @@ const AddTodos = ({addTodo, clearCompleted}) => {
         <div className="form-container">            
             <form onSubmit={handleAddTodo} >
             {error && <div className="error"><p>Add a task to do</p></div>}
-                <label htmlFor="todo">
+                <label htmlFor="todo" aria-labelledby='add-new'>
                     <input type="text" name="todo" id="todo" placeholder="add new task here" value={newTodo} onChange={handleInputChange} /> 
                 </label>
-                <button className='add-new' type="submit">add</button>
+                <button id='add-new' className='add-new' type="submit">add</button>
             </form>
             <button className='clear-completed' type="text" onClick={handleClear}>clear completed</button>
         </div>        

@@ -3,9 +3,9 @@ import "../App.css";
 
 const Todo = ({data, toggleCompleted}) => {
     
-return <div className={data.completed ? "completed todo" : "todo"} onClick={() => toggleCompleted(data.id)}>
-            <li>{data.task}</li>
-        </div>;
+return <li className={data.completed ? "completed todo" : "todo"} onClick={() => toggleCompleted(data.id)}>
+           {data.task}
+        </li>;
 };
 
 export default Todo;
